@@ -23,11 +23,13 @@ We will form into teams of 2-3 students.  **One** partner will fork and clone th
 1.  Then go to the **Settings** and **Manage access**.
 
   ![Settings](assets/industry-prep__git-practice__settings.png)
+
   ![Manage Access](assets/industry-prep__git-practice__manage-access.png)
 
 1.  Add your teammates as collaborators
 
   ![Add collaborators](assets/industry-prep__git-practice__add-collaborators.png)
+  
   ![Add collaborators Access Level](assets/industry-prep__git-practice__add-collaborators-access-level.png)
 
 1.  Each team member will get an email inviting them to the repository.  They should click on the accept link.
