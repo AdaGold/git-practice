@@ -10,8 +10,6 @@ Previously we examined how you can use git to save our work progress by making c
   * Remember you can share your screen to get help or demonstrate for your teammates.
 * Ask for help via Slack, if needed, so your instructor can know to jump in and assist
 
-## Activity Instructions
-
 ### Set Up the Repository
 
 We will form into teams of 2-3 students.  **One** partner will fork and clone this repository.
@@ -20,19 +18,19 @@ We will form into teams of 2-3 students.  **One** partner will fork and clone th
 
   ![Fork Repo](assets/industry-prep__git-practice__fork.png)
 
-1.  Then go to the **Settings** and **Manage access**.
+2.  Then go to the **Settings** and **Manage access**.
 
   ![Settings](assets/industry-prep__git-practice__settings.png)
 
   ![Manage Access](assets/industry-prep__git-practice__manage-access.png)
 
-1.  Add your teammates as collaborators
+3.  Add your teammates as collaborators
 
   ![Add collaborators](assets/industry-prep__git-practice__add-collaborators.png)
-  
+
   ![Add collaborators Access Level](assets/industry-prep__git-practice__add-collaborators-access-level.png)
 
-1.  Each team member will get an email inviting them to the repository.  They should click on the accept link.
+4.  Each team member will get an email inviting them to the repository.  They should click on the accept link.
 
   ![Invitation email](assets/industry-prep__git-practice__add-collaborators-email.png)
 
@@ -48,9 +46,11 @@ Make sure you are cloning your **partner's** repository and **not** Ada's.
 
 If you `cd` into the repository and type `git remote -v` you should see your partner's repo and **NOT** Ada-CXX.
 
+## Activity Instructions
+
 ### Step 1: Complete a Function
 
-Each team member, A, B, and (maybe) C will complete the following functions and then add and commit the file.  
+Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file.  So one teammate will complete `function_a` and another `function_b` etc.
 
 **function_a**
 
@@ -106,7 +106,7 @@ def merge_lists(list_a, list_b):
 
 ### Step 2: Add & Commit Your Function
 
-Each team member should use:
+Each team member should should add and commit their work.
 
 ```
 $ git add <filename>
@@ -117,13 +117,11 @@ This stages changes and saves the changes as a commit.  Use meaningful commit me
 
 ### Step 3: Push changes to Github
 
-Each team member should then use:
+Each team member should try to send their changes to Github.
 
 ```
 $ git push
 ``` 
-
-This sends the commit(s) to Github.
 
 **🚨  Oh Snap!  🚨** One or more team members should get this message!
 
@@ -139,7 +137,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-This is because Github has commits not available locally.  One partner managed to push their commits before the others.
+This is because Github has commits not available locally.  One partner managed to push their commits before the other(s).
 
 Github will not let the rest of the team push changes until they have merged their git history with what is already on github.
 
@@ -147,17 +145,19 @@ Github will not let the rest of the team push changes until they have merged the
 
 Each team member who was unable to push to github should instead **pull** the changes which are on github, but not available locally.
 
-Notice we are following the directions git provides.
+_Notice we are following the directions git provided above._
 
 ```
 $ git pull
 ```
 
-Everyone should verify that you have their teammate's function.  Then each remaining teammate should push their changes to github with:
+After pulling changes from Github verify that the local repository matches Github.  Then each remaining teammate should push their changes to github.
 
 ```
 $ git push
 ```
+
+Goups of 3 will have one teammate repeat this step until everyone's function is on Github.
 
 ### Step 5:  Working on the Same Function
 
@@ -183,9 +183,13 @@ This message occurs when git does not understand how to combine the changes.  Th
 
 ### Step 6:  Using zoom screen sharing resolve the conflict
 
-To resolve this merge conflict either click on the links in VS Code to accept _either_ the current or incomming change, or you can edit the code to combine the changes manually.
+To resolve this merge conflict either click on the links in VS Code to accept the current or incomming change, or edit the code to combine the changes manually.
 
-Make sure you can run the function when you finish.
+Test the function by running the file before moving on.
+
+```
+python function_d.py
+```
 
 ### Step 7: Add and commit the resolution to the merge conflict
 
