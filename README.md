@@ -17,14 +17,21 @@ Previously we examined how you can use git to save our work progress by making c
 We will form into teams of 2-3 students.  **One** partner will fork and clone this repository.
 
 1.  To fork the repository, verify that you are on the **Ada-CXX** repository (where XX is your cohort number), and click on the **Fork** button.
+
   ![Fork Repo](assets/industry-prep__git-practice__fork.png)
+
 1.  Then go to the **Settings** and **Manage access**.
+
   ![Settings](assets/industry-prep__git-practice__settings.png)
   ![Manage Access](assets/industry-prep__git-practice__manage-access.png)
+
 1.  Add your teammates as collaborators
+
   ![Add collaborators](assets/industry-prep__git-practice__add-collaborators.png)
   ![Add collaborators Access Level](assets/industry-prep__git-practice__add-collaborators-access-level.png)
+
 1.  Each team member will get an email inviting them to the repository.  They should click on the accept link.
+
   ![Invitation email](assets/industry-prep__git-practice__add-collaborators-email.png)
 
 ### Clone the Repository
