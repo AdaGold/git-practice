@@ -126,10 +126,10 @@ $ git push
 **🚨  Oh Snap!  🚨** One or more team members should get this message!
 
 ```
-$ git push
-To github.com:<Org-Name>/git-practice.git
+$ git push origin main
+To github.com:<GIT-USERNAME>/git-practice.git
  ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'github.com:<Org-Name>/git-practice.git'
+error: failed to push some refs to 'github.com:<GIT-USERNAME>/git-practice.git'<GIT-USERNAME>
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
