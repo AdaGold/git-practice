@@ -200,7 +200,7 @@ python function_d.py
 
 The team member who resolved the conflict can then add and commit the file and push the changes to GitHub.
 
-### Step 8: Everyone pull the current remote repository
+### Step 8: Everyone Pull the Current Remote Repository
 
 Lastly every team member should run `git pull` to retrieve the remote repository to their computer and verify that they have the same code on their computer.
 
