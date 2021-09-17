@@ -1,38 +1,38 @@
-# Activity:  Using Git to Collaborate
+# Activity: Using Git to Collaborate
 
 ## Goal
 
-Previously we examined how you can use git to save our work progress by making commits saving changes to our code.  This has allowed us to back up our work in incremental changes both locally and on Github.  Now we will use git & Github to collaborate remotely.
+Previously we examined how you can use git to save our work progress by making commits saving changes to our code. This has allowed us to back up our work in incremental changes both locally and on GitHub. Now we will use git and GitHub to collaborate remotely.
 
 ## Things to Remember
 
-* **Communicate** as a team on Zoom, ask each other for help
-  * Remember you can share your screen to get help or demonstrate for your teammates.
-* Ask for help via Slack, if needed, so your instructor can know to jump in and assist
+- **Communicate** as a team on Zoom, ask each other for help
+  - Remember you can share your screen to get help or demonstrate for your teammates.
+- Ask for help via Slack, if needed, so your instructor can know to jump in and assist
 
 ### Set Up the Repository
 
-We will form into teams of 2-3 students.  **One** partner will fork and clone this repository.
+We will form into teams of 2-3 students. **One** partner will fork and clone this repository.
 
-1.  To fork the repository, verify that you are on the **Ada-CXX** repository (where XX is your cohort number), and click on the **Fork** button.
+1. To fork the repository, verify that you are on the **Ada-CXX** repository (where XX is your cohort number), and click on the **Fork** button.
 
-  ![Fork Repo](assets/industry-prep__git-practice__fork.png)
+![Fork Repo](assets/industry-prep__git-practice__fork.png)
 
-2.  Then go to the **Settings** and **Manage access**.
+2. Then go to the **Settings** and **Manage access**.
 
-  ![Settings](assets/industry-prep__git-practice__settings.png)
+![Settings](assets/industry-prep__git-practice__settings.png)
 
-  ![Manage Access](assets/industry-prep__git-practice__manage-access.png)
+![Manage Access](assets/industry-prep__git-practice__manage-access.png)
 
-3.  Add your teammates as collaborators
+3. Add your teammates as collaborators
 
-  ![Add collaborators](assets/industry-prep__git-practice__add-collaborators.png)
+![Add collaborators](assets/industry-prep__git-practice__add-collaborators.png)
 
-  ![Add collaborators Access Level](assets/industry-prep__git-practice__add-collaborators-access-level.png)
+![Add collaborators Access Level](assets/industry-prep__git-practice__add-collaborators-access-level.png)
 
-4.  Each team member will get an email inviting them to the repository.  They should click on the accept link.
+4. Each team member will get an email inviting them to the repository. They should click on the accept link.
 
-  ![Invitation email](assets/industry-prep__git-practice__add-collaborators-email.png)
+![Invitation email](assets/industry-prep__git-practice__add-collaborators-email.png)
 
 ### Clone the Repository
 
@@ -50,7 +50,7 @@ If you `cd` into the repository and type `git remote -v` you should see your par
 
 ### Step 1: Complete a Function
 
-Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file.  So one teammate will complete `function_a` and another `function_b` etc.
+Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file. So one teammate will complete `function_a` and another `function_b` etc.
 
 **function_a**
 
@@ -61,16 +61,16 @@ def most_common_value(number_list):
     frequency_index = {}
     max_frequency = -1
     most_common_value = None
-    for num in nums:
+    for num in number_list:
         if frequency_index.get(num):
             frequency_index[num] += 1
         else:
             frequency_index[num] = 1
-        
+
         if max_frequency < frequency_index[num]:
             max_frequency = frequency_index[num]
             most_common_value = num
-        
+
     return most_common_value
 ```
 
@@ -78,7 +78,7 @@ def most_common_value(number_list):
 
 ```python
 def silly_sum():
-    """ reads numbers from the user (use input_int) 
+    """ reads numbers from the user
         summing as we go until either
         the user enters 0, or
         the sum reaches or exceeds 1000
@@ -88,8 +88,11 @@ def silly_sum():
 
     while num != 0:
         sum += num
+        if sum >= 1000:
+            break
+
         num = int(input('Please enter a number => '))
-    
+
     return sum
 ```
 
@@ -104,29 +107,29 @@ def merge_lists(list_a, list_b):
     return list(set(list_a) | set(list_b))
 ```
 
-### Step 2: Add & Commit Your Function
+### Step 2: Add and Commit Your Function
 
 Each team member should should add and commit their work.
 
 ```
 $ git add <filename>
 $ git commit -m "<COMMIT MESSAGE>"
-``` 
+```
 
-This stages changes and saves the changes as a commit.  Use meaningful commit messages.
+This stages changes and saves the changes as a commit. Use meaningful commit messages.
 
-### Step 3: Push changes to Github
+### Step 3: Push Changes to GitHub
 
-Each team member should try to send their changes to Github.
+Each team member should try to send their changes to GitHub.
 
 ```
 $ git push
-``` 
+```
 
-**🚨  Oh Snap!  🚨** One or more team members should get this message!
+**🚨 Oh Snap! 🚨** One or more team members should get this message!
 
 ```
-$ git push origin main
+$ git push
 To github.com:<GIT-USERNAME>/git-practice.git
  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'github.com:<GIT-USERNAME>/git-practice.git'<GIT-USERNAME>
@@ -137,13 +140,13 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-This is because Github has commits not available locally.  One partner managed to push their commits before the other(s).
+This is because GitHub has commits not available locally. One partner managed to push their commits before the other(s).
 
-Github will not let the rest of the team push changes until they have merged their git history with what is already on github.
+GitHub will not let the rest of the team push changes until they have merged their git history with what is already on GitHub.
 
-### Step 4:  Team members unable to push should pull
+### Step 4: Team Members Unable to Push Should Pull
 
-Each team member who was unable to push to github should instead **pull** the changes which are on github, but not available locally.
+Each team member who was unable to push to GitHub should instead **pull** the changes which are on GitHub, but not available locally.
 
 _Notice we are following the directions git provided above._
 
@@ -151,21 +154,21 @@ _Notice we are following the directions git provided above._
 $ git pull
 ```
 
-After pulling changes from Github verify that the local repository matches Github.  Then each remaining teammate should push their changes to github.
+After pulling changes from GitHub verify that the local repository matches GitHub. Then each remaining teammate should push their changes to GitHub.
 
 ```
 $ git push
 ```
 
-Goups of 3 will have one teammate repeat this step until everyone's function is on Github.
+Groups of 3 will have one teammate repeat this step until everyone's function is on GitHub.
 
-### Step 5:  Working on the Same Function
+### Step 5: Working on the Same Function
 
-What about if multiple people write code on the same area of the same file?  
+What if multiple people write code on the same area of the same file?
 
-Each team member should complete the function in `function_d.py`.  Each team member should write their own solution.  
+Each team member should complete the function in `function_d.py`. Each team member should write their own solution.
 
-Then add, commit and push changes to Github using `git pull` if unable to push, like above.
+Then add, commit, and push changes to GitHub using the same steps as above. Remember to `git pull` if an error is encountered while pushing.
 
 At least one team member should get the following message.
 
@@ -177,29 +180,31 @@ CONFLICT (content): Merge conflict in function_d.py
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-This message occurs when git does not understand how to combine the changes.  This situation is called a **merge conflict**.  When you look at the code in VS Code it should look something like this.
+This message occurs when git does not understand how to combine the changes. This situation is called a **merge conflict**. When you look at the code in VS Code it should look something like this.
 
 ![Merge Conflict](assets/industry-prep__git-practice__merge-conflict.png)
 
-### Step 6:  Using zoom screen sharing resolve the conflict
+### Step 6: Using Zoom Screen Sharing, Resolve the Conflict
 
-To resolve this merge conflict either click on the links in VS Code to accept the current or incomming change, or edit the code to combine the changes manually.
+To resolve this merge conflict either click on the links in VS Code to accept the current or incoming change, or edit the code to combine the changes manually.
 
-Test the function by running the file before moving on.
+Notice that git really does add the lines beginning with `<<<<<<<`, `=======`, and `>>>>>>>` into the file when a merge conflict occurs. If you use the VS Code links to resolve the conflict they will automatically be removed. But if you resolve the changes manually, be sure to remove those lines from the file yourself.
+
+After resolving the merge conflict, test the function by running the file before moving on.
 
 ```
 python function_d.py
 ```
 
-### Step 7: Add and commit the resolution to the merge conflict
+### Step 7: Add and Commit the Resolution to the Merge Conflict
 
-The team member who resolved the conflict can then add and commit the file and push the changes to github.
+The team member who resolved the conflict can then add and commit the file and push the changes to GitHub.
 
-### Step 8:  Everyone pull the current remote repository
+### Step 8: Everyone pull the current remote repository
 
 Lastly every team member should run `git pull` to retrieve the remote repository to their computer and verify that they have the same code on their computer.
 
 ## Questions to Answer
 
-* How do git and Github allow us to collaborate on a project?
-* What is a _merge conflict_?
+- How do git and GitHub allow us to collaborate on a project?
+- What is a _merge conflict_?
