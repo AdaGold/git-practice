@@ -156,6 +156,10 @@ _Notice we are following the directions git provided above._
 $ git pull
 ```
 
+The git command should open an editor with a default merge message. Close the editor window that it opened, and the command will complete.
+
+>`git pull` is doing two things. First it retrieves information about what commits are in the remote repository. Then it tries to merge those changes into the local repository. If we had pulled before committing, git would have been able to bring down the changes directly without additional intervention on our part. However, since we all committed before trying to pull, git needs to do some bookkeeping. It records a local merge commit message, but allows us to edit the message ourselves if we would like!
+
 After pulling changes from GitHub verify that the local repository matches GitHub. Then each remaining teammate should push their changes to GitHub.
 
 ```
