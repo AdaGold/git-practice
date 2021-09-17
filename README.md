@@ -50,9 +50,11 @@ If you `cd` into the repository and type `git remote -v` you should see your par
 
 ### Step 1: Complete a Function
 
-Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file. So one teammate will complete `function_a` and another `function_b` etc.
+Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file.
 
-**function_a**
+So one teammate will fill in the body of the function in `function_a.py` and another will complete the body of the function in `function_b.py`, etc.
+
+**function_a.py**
 
 ```python
 def most_common_value(number_list):
@@ -74,7 +76,7 @@ def most_common_value(number_list):
     return most_common_value
 ```
 
-**function_b**
+**function_b.py**
 
 ```python
 def silly_sum():
@@ -96,7 +98,7 @@ def silly_sum():
     return sum
 ```
 
-**function_c** - for 3-person teams
+**function_c.py** - for 3-person teams
 
 ```python
 def merge_lists(list_a, list_b):
