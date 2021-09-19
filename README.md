@@ -10,6 +10,14 @@ Previously we examined how you can use git to save our work progress by making c
   - Remember you can share your screen to get help or demonstrate for your teammates.
 - Ask for help via Slack, if needed, so your instructor can know to jump in and assist
 
+## Before Getting Started
+
+Just to make sure that VS Code is set as the default editor for git commit messages, in the terminal execute this command:
+
+```bash
+$ git config --global core.editor "code --wait"
+```
+
 ### Set Up the Repository
 
 We will form into teams of 2-3 students. **One** partner will fork and clone this repository.
