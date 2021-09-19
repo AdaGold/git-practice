@@ -12,7 +12,7 @@ Previously we examined how you can use git to save our work progress by making c
 
 ## Before Getting Started
 
-Just to make sure that VS Code is set as the default editor for git commit messages, in the terminal execute this command:
+Just to make sure that VS Code is set as the default editor for git commit messages, execute this command in the terminal:
 
 ```bash
 $ git config --global core.editor "code --wait"
