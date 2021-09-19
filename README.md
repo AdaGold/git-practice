@@ -10,6 +10,14 @@ Previously we examined how you can use git to save our work progress by making c
   - Remember you can share your screen to get help or demonstrate for your teammates.
 - Ask for help via Slack, if needed, so your instructor can know to jump in and assist
 
+## Before Getting Started
+
+Just to make sure that VS Code is set as the default editor for git commit messages, execute this command in the terminal:
+
+```bash
+$ git config --global core.editor "code --wait"
+```
+
 ### Set Up the Repository
 
 We will form into teams of 2-3 students. **One** partner will fork and clone this repository.
@@ -50,9 +58,11 @@ If you `cd` into the repository and type `git remote -v` you should see your par
 
 ### Step 1: Complete a Function
 
-Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file. So one teammate will complete `function_a` and another `function_b` etc.
+Each team member, A, B, and (maybe) C will complete **one** of the following functions and then add and commit the file.
 
-**function_a**
+So one teammate will fill in the body of the function in `function_a.py` and another will complete the body of the function in `function_b.py`, etc.
+
+**function_a.py**
 
 ```python
 def most_common_value(number_list):
@@ -74,7 +84,7 @@ def most_common_value(number_list):
     return most_common_value
 ```
 
-**function_b**
+**function_b.py**
 
 ```python
 def silly_sum():
@@ -96,7 +106,7 @@ def silly_sum():
     return sum
 ```
 
-**function_c** - for 3-person teams
+**function_c.py** - for 3-person teams
 
 ```python
 def merge_lists(list_a, list_b):
@@ -153,6 +163,10 @@ _Notice we are following the directions git provided above._
 ```
 $ git pull
 ```
+
+The git command should open an editor with a default merge message. Close the editor window that it opened, and the command will complete.
+
+>`git pull` is doing two things. First it retrieves information about what commits are in the remote repository. Then it tries to merge those changes into the local repository. If we had pulled before committing, git would have been able to bring down the changes directly without additional intervention on our part. However, since we all committed before trying to pull, git needs to do some bookkeeping. It records a local merge commit message, but allows us to edit the message ourselves if we would like!
 
 After pulling changes from GitHub verify that the local repository matches GitHub. Then each remaining teammate should push their changes to GitHub.
 
