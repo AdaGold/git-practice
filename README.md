@@ -30,7 +30,7 @@ We will form into teams of 2-3 students. **One** partner will fork and clone thi
 
 ![Settings](assets/industry-prep__git-practice__settings.png)
 
-![Collaborators & teams](assets/industry-prep__git-practice__collaborators.png)
+![Collaborators & teams](assets/industry-prep__git-practice__manage-access.png)
 
 3. Add your teammates as collaborators
 
