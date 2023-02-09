@@ -26,11 +26,11 @@ We will form into teams of 2-3 students. **One** partner will fork and clone thi
 
 ![Fork Repo](assets/industry-prep__git-practice__fork.png)
 
-2. Then go to the **Settings** and **Manage access**.
+2. Then go to the **Settings** and **Collaborators & teams**.
 
 ![Settings](assets/industry-prep__git-practice__settings.png)
 
-![Manage Access](assets/industry-prep__git-practice__manage-access.png)
+![Collaborators & teams](assets/industry-prep__git-practice__manage-access.png)
 
 3. Add your teammates as collaborators
 
