@@ -1,4 +1,6 @@
-# Activity: Using Git to Collaborate
+# [DEPRECATED] Activity: Using Git to Collaborate
+
+This activity has been moved to [Ada-Activities](https://github.com/Ada-Activities/git-practice)
 
 ## Goal
 
